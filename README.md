@@ -12,7 +12,18 @@ This repo is all about doing a GroupByKey transformation
 * I have choosen the Google colaboratory to run the code.
 - [My Google Colab Notebook on GroupByKey Transformation](https://github.com/nrajubn/apache-beam-python-GroupByKey/blob/main/GroupByKey.ipynb)
 - Demonstration Video: []()
-- My Personal Repo on apache beam python with README file - https://github.com/nrajubn/apache-beam-python-GroupByKey
+- [Source repo](https://github.com/nrajubn/apache-beam-python-GroupByKey)
+
+## Apache Beam 
+-  A framework to create pipelines.
+-  The pipelines itself will executred on a streaming engine (such as Flink or Spark)
+-  Pipelines: There are few computations like input, output, and processing are the few data processing jobs actually made.
+
+## GroupByKey
+-  is a Beam transform for processing collections of key/value pairs.
+-  The input to GroupByKey is a collection of key/value pairs that represents a multimap, where the collection contains multiple pairs that have the same key, but different values.
+-  is a good way to aggregate data that has something in common
+-  For example : data set consists of words from a text file and the line number on which they appear. We want to group together all the line numbers (values) that share the same word (key), letting us see all the places in the text where a particular word appears.
 
 ## Prerequisites
 - Python
